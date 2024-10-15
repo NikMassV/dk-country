@@ -1,0 +1,19 @@
+server:
+  port: ${port:9090}
+
+spring:
+  application:
+    name: dk-country
+  datasource:
+    url: ${datasource.url:jdbc:postgresql://localhost:5432/countries}
+    username: ${datasource.username:postgres}
+    password: ${datasource.password:postgres}
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  data:
+    mongodb:
+      host: ${mongo.host:localhost}
+      port: ${mongo.port:27017}
+      database: ${mongo.database:mongo}

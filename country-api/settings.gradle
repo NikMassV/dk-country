@@ -1,0 +1,4 @@
+rootProject.name = 'dk-country'
+include 'country-client'
+include 'country-api'
+
